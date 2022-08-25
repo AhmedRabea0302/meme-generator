@@ -1,0 +1,145 @@
+
+* {
+  box-sizing: border-box;
+}
+
+#root {
+  width: 600px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+}
+
+.header--comp {
+  height: 90px;
+  padding: 5px 20px;
+  background: linear-gradient(260deg, rgba(166,38,211,1) 20%, rgba(103,34,128,1) 67%);
+}
+
+.brand {
+  display: flex;
+  flex: row;
+  align-items: center;
+}
+
+.brand h1 {
+  font-size: 18px;
+  font-family: monospace;
+  color: #fff;
+  margin-left: 15px;
+}
+
+.header--nav {
+  margin-top: 5px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.logo {
+  width: 65px;
+  height: 70px;
+}
+
+.nav--title {
+  color: #fff;
+  font-size: 16px;
+  font-family: monospace;
+}
+
+
+/* ============== Meme Component ================ */
+.form--cont {
+  width: 100%;
+  margin: 50px auto;
+  display: flex;
+  flex-direction: column;
+  padding: 0 50px;
+}
+
+.inputs {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.inputs input {
+  width: 48%;
+  height: 40px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  text-indent: 6px;
+  color: #232323;
+  font-size: 16px;
+  font-family: monospace;
+}
+
+.get--button {
+  width: 100%;
+  height: 40px;
+  margin-top: 15px;
+  background: linear-gradient(260deg, rgba(166,38,211,1) 20%, rgba(103,34,128,1) 67%);
+  color: #fff;
+  font-weight: bold;
+  font-family: monospace;
+  border: none;
+  border-radius: 5px;
+}
+
+
+.filled, .transparent {
+  display: block;
+  width: 200px;
+  height: 200px;
+  border: 2px solid #232323;
+  margin:  55px auto;
+}
+
+.filled {
+  background-color: #232323;
+}
+
+
+.meme {
+  position: relative;
+}
+
+.meme--image {
+  max-width: 100%;
+  border-radius: 3px;
+}
+
+.meme--text {
+  position: absolute;
+  width: 80%;
+  text-align: center;
+  left: 50%;
+  transform: translateX(-50%);
+  margin: 15px 0;
+  padding: 0 5px;
+  font-family: impact, sans-serif;
+  font-size: 2em;
+  text-transform: uppercase;
+  color: white;
+  letter-spacing: 1px;
+  text-shadow:
+      2px 2px 0 #000,
+      -2px -2px 0 #000,
+      2px -2px 0 #000,
+      -2px 2px 0 #000,
+      0 2px 0 #000,
+      2px 0 0 #000,
+      0 -2px 0 #000,
+      -2px 0 0 #000,
+      2px 2px 5px #000;
+}
+
+.bottom {
+  bottom: 0;
+}
+
+.top {
+  top: 0;
+}
